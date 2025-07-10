@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "66fd7a00-9916-4742-b01e-568b76f4f91d",
+		"name": "Reward-APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39647277",
+		"_collection_link": "https://e-commer.postman.co/workspace/Temporary~ad2a22c5-e92c-4725-b913-964f395d9019/collection/39647277-66fd7a00-9916-4742-b01e-568b76f4f91d?action=share&source=collection_link&creator=39647277"
+	},
+	"item": [
+		{
+			"name": "/reward/points",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rewards/points?userId=686f561931351804e5b0a4d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rewards",
+						"points"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "686f561931351804e5b0a4d2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/reward/points",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/rewards/points?userId=686f561931351804e5b0a4d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rewards",
+								"points"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "686f561931351804e5b0a4d2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"54-fhvHQL/kSLKALtMjzSKRMJEnfCI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:04:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"totalPoints\": 44,\n        \"updateAt\": \"2025-07-10T09:35:25.265Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/rewards/transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rewards/transaction?userId=686f561931351804e5b0a4d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rewards",
+						"transaction"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "686f561931351804e5b0a4d2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/rewards/transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/rewards/transaction?userId=686f561931351804e5b0a4d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rewards",
+								"transaction"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "686f561931351804e5b0a4d2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1090"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"442-3xNgcN06149TKPmYDlH/8JI4Kjc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:05:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"count\": 5,\n    \"data\": [\n        {\n            \"_id\": \"686f8e6a5476699c463cd89c\",\n            \"userId\": \"686f561931351804e5b0a4d2\",\n            \"amount\": 100,\n            \"category\": \"groceries\",\n            \"pointsEarned\": 115,\n            \"createdAt\": \"2025-07-10T09:56:58.361Z\",\n            \"updatedAt\": \"2025-07-10T09:56:58.361Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"686f898e5476699c463cd88e\",\n            \"userId\": \"686f561931351804e5b0a4d2\",\n            \"amount\": 50,\n            \"category\": \"groceries\",\n            \"pointsEarned\": 5,\n            \"createdAt\": \"2025-07-10T09:36:14.703Z\",\n            \"updatedAt\": \"2025-07-10T09:36:14.703Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"686f897d5476699c463cd88a\",\n            \"userId\": \"686f561931351804e5b0a4d2\",\n            \"amount\": 40,\n            \"category\": \"shopping\",\n            \"pointsEarned\": 10,\n            \"createdAt\": \"2025-07-10T09:35:57.283Z\",\n            \"updatedAt\": \"2025-07-10T09:35:57.283Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"686f89745476699c463cd886\",\n            \"userId\": \"686f561931351804e5b0a4d2\",\n            \"amount\": 120,\n            \"category\": \"shopping\",\n            \"pointsEarned\": 50,\n            \"createdAt\": \"2025-07-10T09:35:48.366Z\",\n            \"updatedAt\": \"2025-07-10T09:35:48.366Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"686f89665476699c463cd882\",\n            \"userId\": \"686f561931351804e5b0a4d2\",\n            \"amount\": 100,\n            \"category\": \"vegetable\",\n            \"pointsEarned\": 40,\n            \"createdAt\": \"2025-07-10T09:35:34.210Z\",\n            \"updatedAt\": \"2025-07-10T09:35:34.210Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "/rewards/options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rewards/options",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rewards",
+						"options"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/rewards/options",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/rewards/options",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rewards",
+								"options"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "199"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c7-9eR6ehQ4l5js7QzSjr6a75cOIf8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:06:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"type\": \"cashback\",\n            \"pointsRequired\": 100\n        },\n        {\n            \"type\": \"voucher\",\n            \"pointsRequired\": 150\n        },\n        {\n            \"type\": \"gift_card\",\n            \"pointsRequired\": 200\n        },\n        {\n            \"type\": \"discount_coupon\",\n            \"pointsRequired\": 80\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "/reward/redeem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"686f561931351804e5b0a4d2\",\r\n    \"option\":\"discount_coupon\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rewards/redeem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rewards",
+						"redeem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"686f561931351804e5b0a4d2\",\r\n    \"option\":\"discount_coupon\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/rewards/redeem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rewards",
+								"redeem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "189"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd-pei07iu+AIuktFY19UmpBOSML2I\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:06:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Redeemed 80 points for discount_coupon\",\n    \"data\": {\n        \"userId\": \"686f561931351804e5b0a4d2\",\n        \"rewardType\": \"discount_coupon\",\n        \"pointsRedeemed\": 80,\n        \"remainingPoints\": 464\n    }\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"686f561931351804e5b0a4d2\",\r\n    \"option\":\"gift_card\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/rewards/redeem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rewards",
+								"redeem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3-phmolS5/GvhmlDMGpbSwXPGO900\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:07:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Redeemed 200 points for gift_card\",\n    \"data\": {\n        \"userId\": \"686f561931351804e5b0a4d2\",\n        \"rewardType\": \"gift_card\",\n        \"pointsRedeemed\": 200,\n        \"remainingPoints\": 264\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "add transaction",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\"  : \"686f561931351804e5b0a4d2\",\r\n    \"amount\" : 100,\r\n    \"category\" : \"groceries\",\r\n    \"pointsEarned\":115\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\"  : \"686f561931351804e5b0a4d2\",\r\n    \"amount\" : 1000,\r\n    \"category\" : \"education\",\r\n    \"pointsEarned\":500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "292"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"124-4i2C2I2Fb3diCXuqS4srmdqnjBc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jul 2025 10:05:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"userId\": \"686f561931351804e5b0a4d2\",\n        \"amount\": 1000,\n        \"category\": \"education\",\n        \"pointsEarned\": 500,\n        \"_id\": \"686f90765476699c463cd8a7\",\n        \"createdAt\": \"2025-07-10T10:05:42.993Z\",\n        \"updatedAt\": \"2025-07-10T10:05:42.993Z\",\n        \"__v\": 0\n    },\n    \"message\": \"Transaction created and reward update. \"\n}"
+				}
+			]
+		}
+	]
+}
