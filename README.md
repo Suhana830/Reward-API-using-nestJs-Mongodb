@@ -85,6 +85,78 @@ http://localhost:3000
 
 ## 📘 API Endpoints
 
+### ➕ POST /users
+
+*Description:*  
+Create a new user.
+
+*Body:*
+
+json
+{
+  "name": "suhana Gupta",
+  "email": "suhana@example.com",
+  "password":"123456"
+}
+
+
+*Response:*
+
+json
+{
+  "status": "success",
+  "data": {
+    "_id": "USER123",
+    "name": "suhana Gupta",
+    "email": "suhana@example.com",
+    "password":123456,
+    "createdAt": "...",
+    "updatedAt": "...",
+    
+  }
+}
+
+
+---
+
+### ➕ POST /transactions
+
+*Description:*  
+Create a transaction and assign reward points.
+
+*Body:*
+
+json
+{
+    "userId"  : "686f561931351804e5b0a4d2",
+    "amount" : 1000,
+    "category" : "education",
+    "pointsEarned":500
+}
+
+
+*Response:*
+
+json
+{
+    "status": "success",
+    "data": {
+        "userId": "686f561931351804e5b0a4d2",
+        "amount": 1000,
+        "category": "education",
+        "pointsEarned": 500,
+        "_id": "686f90765476699c463cd8a7",
+        "createdAt": "2025-07-10T10:05:42.993Z",
+        "updatedAt": "2025-07-10T10:05:42.993Z",
+        "__v": 0
+    },
+    "message": "Transaction created and reward update. "
+}
+
+
+---
+
+
 ### 📍 GET /rewards/points
 
 *Description:*  
